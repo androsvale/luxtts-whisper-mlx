@@ -121,7 +121,7 @@ async def text_to_speech(
         
         if not os.path.exists(ref_path):
             logger.error(f"Voice reference not found: {ref_path}")
-            raise HTTPException(400, f"Voice reference not found: {ref_path}")
+            raise HTTPException(400, f"Voice reference not found: {ref_path}. Place voice files in ~/voices/ or use 'clone:/path/to/file.wav'")
         
         # Encode voice if not cached
         if ref_path not in voice_cache:

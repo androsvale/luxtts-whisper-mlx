@@ -328,7 +328,21 @@ Update macOS to 12.3+ and ensure you're on Apple Silicon (M1/M2/M3).
 
 ### "Voice reference not found"
 
-Ensure your voice file exists at `~/voices/andros_voice.wav`.
+Ensure your voice file exists in `~/voices/`.  
+Example: `~/voices/andros_voice.wav`
+
+**Default voice setup:**
+```bash
+mkdir -p ~/voices
+cp /path/to/your/voice.wav ~/voices/andros_voice.wav
+```
+
+**Using a custom voice:**
+```bash
+curl -X POST http://192.168.86.29:8000/v1/audio/speech \
+  -d "input=Hello with custom voice" \
+  -d "voice=clone:/path/to/your/custom.wav"
+```
 
 ### First request is slow
 
