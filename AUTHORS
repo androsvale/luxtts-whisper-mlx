@@ -1,0 +1,34 @@
+# Authors and Credits
+
+## Primary Integration
+
+**Simulacrum.sh** — Integration architecture, OpenAI-compatible server implementation, packaging, documentation
+- **Andros Vale** — Project direction, vision, requirements
+- **Eidos** (AI Agent) — Implementation, debugging, architecture
+
+## Upstream Projects
+
+This project would not exist without these excellent open-source projects:
+
+| Project | Author/Organization | License | Purpose |
+|---------|---------------------|---------|---------|
+| **LuxTTS** | Yatharth Sharma (@ysharma3501) | MIT (likely) | Voice cloning text-to-speech |
+| **Whisper MLX** | Apple Inc. / MLX team | MIT | Apple Silicon speech-to-text |
+| **FastAPI** | Sebastián Ramírez (@tiangolo) | MIT | Web framework |
+| **Linacodec** | Yatharth Sharma (@ysharma3501) | Unknown (likely MIT) | Vocoder for LuxTTS |
+| **PyTorch** | PyTorch Team / Meta | BSD-style | Deep learning framework |
+| **transformers** | Hugging Face | Apache 2.0 | Model loading |
+| **lhotse** | Lhotse team | Apache 2.0 | Audio data handling |
+| **MLX** | Apple Inc. | MIT | Apple machine learning |
+
+## Special Thanks
+
+- **OpenAI** — For the OpenAI-compatible API specification that enables interoperability
+- **Home Assistant Wyoming Protocol** — For the streaming voice architecture inspiration
+- **FastAPI community** — For excellent documentation and examples
+
+---
+
+This project represents an integration effort — combining multiple specialized tools 
+into a cohesive, OpenAI-compatible server optimized for Apple Silicon. All credit 
+for the underlying TTS/STT engines belongs to their respective authors.
